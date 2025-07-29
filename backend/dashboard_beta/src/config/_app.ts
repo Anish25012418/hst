@@ -1,0 +1,3 @@
+/**
+ * @title Application-specific configuration
+ **/

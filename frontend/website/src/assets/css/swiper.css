@@ -1,0 +1,194 @@
+/* ----------------------------- */
+/* Swiper CSS */
+/* ----------------------------- */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: black; */
+  width: auto !important;
+
+  /* Center slide text vertically */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.swiper-slide img {
+  display: block;
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;
+}
+.explore-swiper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Swiper navigation button */
+.swiper-button-prev,
+.swiper-button-next {
+  border-radius: 50% 25% / 25% 50%;
+  position: absolute !important;
+  height: 4rem !important;
+  /* top: 0; */
+  transform: translateY(-160%) !important;
+  width: 1.875rem;
+  padding: 0 1.875rem;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.6) !important;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255, 0.6);
+  /* z-index: 1500; */
+  /* overflow: hidden; */
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transition: 0.5s ease; /* Add transition for smooth hover effect */
+  color: #fff !important;
+  background-color: #f8a408;
+  /* opacity: 0.5; */
+  /* visibility: visible; Show the buttons on hover */
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev::after {
+  display: block;
+}
+
+.swiper-button-prev:hover::after {
+  display: block;
+}
+
+.swiper-button-next::after {
+  display: block;
+}
+
+.swiper-button-next:hover::after {
+  display: block;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+  display: block;
+}
+
+.swiper-button-prev i {
+  margin-left: -5px;
+}
+
+.swiper-button-next i {
+  margin-right: -5px;
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-button-disabled::after {
+  display: none;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+  .common-swiper-resp .swiper-button-prev::after,
+  .common-swiper-resp .swiper-button-next::after {
+    font-size: 10px !important;
+    font-weight: bold !important;
+  }
+
+  .common-swiper-resp .swiper-button-prev,
+  .common-swiper-resp .swiper-button-next {
+    border-radius: 0%;
+    position: absolute;
+    height: 2rem !important;
+    top: 50%;
+    transform: translateY(330%);
+    /* transform: translateY(-144%); */
+    /* width: 1.875rem; */
+    width: 11px;
+    padding: 0 11px;
+
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.6) !important;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    /* overflow: hidden; */
+  }
+
+  .common-swiper-resp .swiper-button-prev i {
+    margin-left: -5px;
+  }
+
+  .common-swiper-resp .swiper-button-next i {
+    margin-right: -5px;
+  }
+}
+
+/* ----------------------------- */
+/* Testimonial Swiper CSS */
+/* ----------------------------- */
+/* .testimonial-swiper .swiper {
+  margin: 0 auto;
+  width: 66.5%;
+} */
+
+.testimonial-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.testimonial-swiper .swiper-button-prev,
+.testimonial-swiper .swiper-button-next {
+  display: none !important;
+}
+
+/* ----------------------------- */
+/* Homepage Banner Swiper CSS (Section 1) */
+/* ----------------------------- */
+.banner-swiper .swiper-slide {
+  width: 100% !important;
+}
+.banner-swiper .swiper-button-prev,
+.banner-swiper .swiper-button-next {
+  /* border-radius: 50% 25% / 25% 50%; */
+  border-radius: 50%;
+  position: absolute !important;
+  height: 4rem !important;
+  /* top: 0; */
+  transform: translateY(-50%) !important;
+  width: 1.875rem;
+  padding: 0 1.875rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255) !important;
+  cursor: pointer;
+  background-color: transparent;
+  /* background-color: rgb(255, 255, 255, 0.1); */
+  /* z-index: 1500; */
+  /* overflow: hidden; */
+}
+.banner-swiper .swiper-button-prev:hover,
+.banner-swiper .swiper-button-next:hover {
+  transition: 0.5s ease; /* Add transition for smooth hover effect */
+  color: #f8a408 !important;
+  background-color: transparent;
+  /* opacity: 0.5; */
+  /* visibility: visible; Show the buttons on hover */
+}

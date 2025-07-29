@@ -1,0 +1,43 @@
+{
+  "workshopThumbnailPic": "https://himalayansingletrack.com/wp-content/uploads/2023/05/Workshop-Banner.jpg",
+  "header": "Servicing That Makes Every Ride Better",
+  "subHeader": "",
+  "description": "",
+  "list": [
+    {
+      "image": "https://himalayansingletrack.com/wp-content/uploads/2023/05/Workshop-Banner.jpg",
+      "header": "FOX SERVICE CENTER",
+      "description": "Himalayan Single Track’s workshop is the only certified Fox Service Center in Nepal. Our Mechanics professionally service your Fox Forks, Shocks and Seat Posts with Original Parts, Seals, Bushings, Oils, Bath Fluids and Lubricants."
+    },
+    {
+      "image": "https://himalayansingletrack.com/wp-content/uploads/2023/05/Workshop-Banner.jpg",
+      "header": "BIKE SERVICING",
+      "description": "All of our bike servicing starts with a professional overall check of your bike, where our mechanics will guide you through what the problems are and how they can be fixed. We offer many levels of service from basic checkup and safety checks to a full bike overhaul."
+    },
+    {
+      "image": "https://himalayansingletrack.com/wp-content/uploads/2023/05/Workshop-Banner.jpg",
+      "header": "BIKE SETUP & TUNING",
+      "description": "Our Mechanics will help you set up your bike so that you can get the most efficient performance. Proper bike set up, including Suspension Sag, Seat height and angle, arm reach and cockpit setups are all key points to getting the best out of your ride."
+    },
+    {
+      "image": "https://himalayansingletrack.com/wp-content/uploads/2023/05/Workshop-Banner.jpg",
+      "header": "BIKE WASH",
+      "description": "Our bike wash station is the key to keeping your bike smooth and clean so you can just focus on riding."
+    },
+    {
+      "image": "https://himalayansingletrack.com/wp-content/uploads/2023/05/Workshop-Banner.jpg",
+      "header": "PICK UP & DROP OFF",
+      "description": "Don’t have time to visit us? Then we offer a home delivery service."
+    },
+    {
+      "image": "https://himalayansingletrack.com/wp-content/uploads/2023/05/Workshop-Banner.jpg",
+      "header": "MECHANIC TRAININGS",
+      "description": "If you want to learn more about your bike and maintaining it, the sign up for one of our training courses."
+    }
+  ],
+  "brand_gallery": [
+    "https://web.himalayansingletrack.com/web_images/brand_shimano.png",
+    "https://web.himalayansingletrack.com/web_images/brand_fox.jpg",
+    "https://web.himalayansingletrack.com/web_images/brand_park_tool.png"
+  ]
+}

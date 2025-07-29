@@ -1,0 +1,69 @@
+{
+  "rental_title": "Are you looking to rent a bicycle for your cycling adventure in Kathmandu?",
+  "rental_image": "asdasdada",
+  "rental_description": {
+    "blocks": [
+      {
+        "key": "e57vj",
+        "text": "If you are looking to cruise through the alleys of Kathmandu valley, or to explore the single tracks around the valley, or even embarking on an adventure into the Himalaya’s, then look no further than Himalayan Single Track, we have got you covered with Giant’s largest fleet of rental mountain bikes. ",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "1o70",
+        "text": "Bike pickup is available at our store in Thamel or Pokhara, we are located at the heart of the tourist district. ",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "lbms",
+        "text": "Reservation is required- Give us a call or text if your are looking for same day rental. +977 9823100104. We also rent bike racks, and we can also arrange delivery to your location. ",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "75k0r",
+        "text": "We also offer guided day trips and proffesional mountain bike shuttle service.",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      }
+    ],
+    "entityMap": {}
+  },
+  "bike_title": "About our Bikes",
+  "bike_description": "We have our own fleet of Mountain Bikes (Full Suspension and Hardtail). Our ride partners are Giant which allows us to update our fleet every 18 months. Our workshop. It takes a lot of time, effort and money to maintain bikes and to do that we need a world-class workshop. The first thing many of our clients comment on is the high standard of our work shop.",
+  "bike_gallery": [
+    {
+      "title": "FULL SUSPENSION - GIANT TRANCE X",
+      "image": "asdasdasdasd",
+      "description": "The Giant Trance X is the ideal bike for Nepal, weather its Enduro day trips in Kathmandu Valley or making your way into the mountains on the single track search, this bike is perfect.",
+      "features": [
+        "Fox 36 up Front and Rear Fox Float DPS",
+        "Sram 1×12 NX Eagle Drivetrain",
+        "Dropper Post"
+      ]
+    },
+    {
+      "title": "HARDTAIL - GIANT TALON 1",
+      "image": "asdasdasdasd",
+      "description": "A quality hardtail that can go anywhere and do anything. A very capable climbing machine and it also comes downhill like a charm! This is a great bike for bikepacking Annapurnas or zipping around Kathmandu City.",
+      "features": [
+        "100mm Air Suspension Fork",
+        "1 x 10 Drive Train",
+        "Hydrulic Disc Breaks"
+      ]
+    }
+  ]
+}

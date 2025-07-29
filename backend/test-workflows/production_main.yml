@@ -1,0 +1,53 @@
+name: Build and Deploy Project App in Production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Install Node.js 20.11.16
+      run: |
+          curl -fsSL https://deb.nodesource.com/setup_20.11.16 | sudo -E bash -
+          sudo apt-get install -y nodejs
+
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install dependencies and build
+      working-directory: ./backend/dashboard
+      run: |
+        npm install
+        npm run prod:build
+      env:
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        JWT_SECRET: ${{ secrets.JWT_SECRET }}
+
+    - name: Delete existing files on cPanel
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.CPANEL_HOST }}
+        username: ${{ secrets.CPANEL_USERNAME }}
+        password: ${{ secrets.CPANEL_PASSWORD }}
+        port: ${{ secrets.CPANEL_PORT }}
+        script: |
+          rm -rf ~/hst-demo-api/*
+
+    - name: Transfer files to cPanel
+      uses: appleboy/scp-action@v0.1.4
+      with:
+        host: ${{ secrets.CPANEL_HOST }}
+        username: ${{ secrets.CPANEL_USERNAME }}
+        password: ${{ secrets.CPANEL_PASSWORD }}
+        port: ${{ secrets.CPANEL_PORT }}
+        source: backend/dashboard/dist/*  # Use wildcard to include contents inside 'dist'
+        target: ~/hst-demo-api  # Target directory on cPanel
+        strip_components: 3 # how many directories to skip
+
+    - name: Clean up
+      working-directory: ./app
+      run: rm -rf ./backend/dashboard/dist/

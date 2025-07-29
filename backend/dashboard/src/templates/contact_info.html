@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        color: #333333;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        background-color: #000000;
+        color: #f6a306;
+        text-align: center;
+        padding: 20px;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 28px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .header p {
+        margin: 5px 0 0;
+        font-size: 16px;
+      }
+      .content {
+        padding: 20px;
+      }
+      .content p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+      .content p strong {
+        color: #f6a306;
+      }
+      .footer {
+        background-color: #333333;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+      }
+      .footer a {
+        color: #f6a306;
+        text-decoration: none;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <!-- Header -->
+      <div class="header">
+        <h1>Himalayan Single Track</h1>
+        <p>Explore the trails with us</p>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <p><strong>Name:</strong> ${full_name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Tour Interested:</strong> ${tour_interested}</p>
+        <p><strong>Country:</strong> ${country}</p>
+        <p><strong>Question:</strong> ${question}</p>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>&copy; 2024 Himalayan Single Track. All rights reserved.</p>
+        <p>
+          <a href="https://www.himalayansingletrack.com" target="_blank"
+            >Visit our website</a
+          >
+          |
+          <a href="mailto:info@himalayansingletrack.com">Contact us</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

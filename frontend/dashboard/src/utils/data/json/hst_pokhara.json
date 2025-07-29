@@ -1,0 +1,35 @@
+{
+  "title": "Welcome to HST Pokhara",
+  "description": [
+    "Pokhara is a beautiful lakeside town nestled at the base of the Annapurna, Nilgiri and Dhaulagiri Himalayas. The pace of life in Pokhara is much more relaxed compared to Kathmandu. The warm weather, tranquil lake vibes and snow capped himalayan vistas make it the perfect place to spend a few days. Alot of treks and tours start and end in Pokhara. Mountain biking in Pokhara has always been a favorite for visitors and locals alike.",
+    "We have bike rentals by the hour for cruising around the lake, full suspension bikes for smashing the trails as well as guided tours around the Pokhara Valley. Pokhara is also the gateway to the famous Lower Mustang region, home of the popular Lubra Valley trail. Pokhara is the perfect launching place for tours into this region and you can see what we offer below. Not just hardcore single tracks, but also easier culture experiences for intermediate riders."
+  ],
+  "trips": [
+    {
+      "title": "Day Trips Around Pokhara",
+      "description": "Himalayan Single Tracks Pokhara office, offers a range of mountain bike day trips for all range of riders from an easy pedal around the lake to some hardcore trail smashing Enduro rides.",
+      "href": ""
+    },
+    {
+      "title": "Overnight Trips Around Pokhara",
+      "description": "Pokhara has a lot to offer when it comes to overnight trips. Around the picturesque valley are a series of quaint villages which boast authentic culture and stunning mountain views. Some of the places we can visit on Overnight trips includes Astam Village, Australian Camp, Begnas Lake",
+      "href": ""
+    }
+  ],
+  "images": [
+    "https://himalayansingletrack.com/wp-content/uploads/2024/03/Pokharabanner-1290x737.jpg",
+    "https://himalayansingletrack.com/wp-content/uploads/2024/03/Pokharabanner-1290x737.jpg",
+    "https://himalayansingletrack.com/wp-content/uploads/2024/03/Pokharabanner-1290x737.jpg",
+    "https://himalayansingletrack.com/wp-content/uploads/2024/03/Pokharabanner-1290x737.jpg",
+
+    "https://himalayansingletrack.com/wp-content/uploads/2024/03/Pokharabanner-1290x737.jpg",
+    "https://himalayansingletrack.com/wp-content/uploads/2024/03/Pokharabanner-1290x737.jpg",
+    "https://himalayansingletrack.com/wp-content/uploads/2024/03/Pokharabanner-1290x737.jpg",
+    "https://himalayansingletrack.com/wp-content/uploads/2024/03/Pokharabanner-1290x737.jpg",
+
+    "https://himalayansingletrack.com/wp-content/uploads/2024/03/Pokharabanner-1290x737.jpg",
+    "https://himalayansingletrack.com/wp-content/uploads/2024/03/Pokharabanner-1290x737.jpg",
+    "https://himalayansingletrack.com/wp-content/uploads/2024/03/Pokharabanner-1290x737.jpg",
+    "https://himalayansingletrack.com/wp-content/uploads/2023/05/Workshop-Banner.jpg"
+  ]
+}

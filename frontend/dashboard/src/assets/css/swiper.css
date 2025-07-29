@@ -1,0 +1,184 @@
+/* #app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+ */
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.swiper-wrapper .swiper-slide {
+  padding: 0;
+  /* margin: 0; */
+  /* margin-left: 1px !important; */
+  /* width: 352.5px !important; */
+  /* width: 241.5px !important; */
+}
+
+/***************************************
+****************************************
+** Navigation icons 
+****************************************
+***************************************/
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  height: 4rem;
+  width: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* padding: 0 32px; */
+  color: rgba(255, 255, 255, 0.6) !important;
+  cursor: pointer;
+  background-color: rgba(20, 20, 20, 0.2);
+  /* overflow: hidden; */
+}
+.swiper-top {
+  overflow: visible !important;
+}
+.swiper-top .swiper-button-prev,
+.swiper-top .swiper-button-next {
+  border-radius: 6px;
+  height: 32px;
+  width: 32px;
+  top: 0;
+  color: rgba(0, 0, 0) !important;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  transform: translateY(-20px);
+}
+.swiper-bottom .swiper-button-prev,
+.swiper-bottom .swiper-button-next {
+  bottom: 0;
+  transform: translateY(50px);
+}
+.hide-navigation-bg .swiper-button-prev,
+.hide-navigation-bg .swiper-button-next {
+  background-color: transparent;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transition: 0.5s ease; /* Add transition for smooth hover effect */
+  color: #fff !important;
+  background-color: rgba(20, 20, 20, 0.3);
+  /* opacity: 0.5; */
+  /* visibility: visible; Show the buttons on hover */
+}
+.swiper-top .swiper-button-prev:hover,
+.swiper-top .swiper-button-next:hover {
+  transition: 0.5s ease; /* Add transition for smooth hover effect */
+  color: #fff !important;
+  background-color: gray;
+  /* opacity: 0.5; */
+  /* visibility: visible; Show the buttons on hover */
+}
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev::after {
+  display: block;
+}
+.swiper-button-prev:hover::after {
+  display: block;
+}
+.swiper-button-next::after {
+  display: block;
+}
+.swiper-button-next:hover::after {
+  display: block;
+}
+.swiper-button-prev i,
+.swiper-button-next i {
+  display: block;
+}
+.swiper-button-prev i {
+  margin-left: -5px;
+}
+.swiper-button-next i {
+  margin-right: -5px;
+}
+.swiper-button-disabled {
+  display: none;
+}
+.swiper-button-disabled::after {
+  display: none;
+}
+
+/* Media query for smaller screens */
+@media screen and (min-width: 768px) {
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 32px;
+  }
+
+  .swiper-top .swiper-button-prev::after,
+  .swiper-top .swiper-button-next::after {
+    font-size: 12px;
+  }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 12px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    height: 2rem;
+    width: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* width: 32px; */
+    /* padding: 0 11px; */
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6) !important;
+    cursor: pointer;
+    background-color: rgba(20, 20, 20, 0.2);
+    /* overflow: hidden; */
+  }
+  /* .swiper-top .swiper-button-prev,
+  .swiper-top .swiper-button-next {
+    border-radius: 6px;
+    height: 32px !important;
+    width: 32px !important;
+  } */
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    transition: 0.5s ease; /* Add transition for smooth hover effect */
+    color: #fff !important;
+    background-color: rgba(20, 20, 20, 0.3);
+    /* opacity: 0.5; */
+    /* visibility: visible; Show the buttons on hover */
+  }
+  /* .swiper-top .swiper-button-prev:hover,
+  .swiper-top .swiper-button-next:hover {
+    transition: 0.5s ease;
+    color: #fff !important;
+    background-color: gray;
+  } */
+}
+.hide-navigation-bg .swiper-button-prev:hover,
+.hide-navigation-bg .swiper-button-next:hover {
+  background-color: transparent;
+}

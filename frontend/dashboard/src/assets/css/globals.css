@@ -1,0 +1,106 @@
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+/* Tailwind properties */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Can modify default tailwind properties */
+
+@layer utilities {
+  .fourth-element-padding-0 > :nth-child(3n-2) {
+    padding-left: 0;
+  }
+}
+
+/* Base css */
+body {
+  min-width: 360px;
+  max-width: 2028px;
+  margin: 0 auto;
+  font-family: Poppins, sans-serif;
+  /* color: "#121212"; */
+  font-size: 14px;
+  background-color: #fff;
+
+  /* To stop unneccessary div changes when border on a div changes */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+/* Toast css */
+.Toastify__toast-container {
+  z-index: 99999 !important;
+  border-radius: 0;
+}
+
+.Toastify__toast-container div {
+  border-radius: 0;
+}
+
+/* Hover effect on text */
+.highlight-underline {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  /* gap: 2px; */
+  transition: border-bottom 0.3s ease;
+  width: fit-content;
+}
+
+.highlight-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  /* height: 1.5px; */
+  border-top: 0;
+  /* background-color: rgb(0, 0, 0); */
+  transition: width 0.3s ease;
+  /* translate: 0px 10px; */
+}
+
+.highlight-underline:hover::after {
+  width: 100%;
+  border-top: 2px solid black;
+}
+
+.caret-sign {
+  transition: transform 0.5s ease;
+}
+
+.highlight-underline:hover .caret-sign {
+  transform: rotate(180deg);
+}
+
+.skewed-14px {
+  text-decoration: none;
+  clip-path: polygon(50px 0%, 100% 0%, calc(100% - 50px) 100%, 0% 100%);
+}
+
+.bg-dashboard {
+  background: rgb(90, 204, 218);
+  background: linear-gradient(
+    90deg,
+    rgba(90, 204, 218, 1) 31%,
+    rgba(1, 205, 169, 0.7315301120448179) 71%,
+    rgba(59, 237, 183, 1) 100%
+  );
+
+  /* background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%); */
+}
+
+/* https://cssgradient.io/gradient-backgrounds/ */
+.bg-orangish {
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #f0440bd9 74%);
+}
+
+.apply-live-link {
+  @apply cursor-pointer hover:text-brand-yellow-700;
+}

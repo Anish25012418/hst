@@ -1,0 +1,156 @@
+/* When you dont need to display scrollbar */
+/* body::-webkit-scrollbar,
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+} */
+
+/***********************************************************
+************************************************************
+************************************************************
+************************************************************/
+/* Scrollbar track margins */
+/***********************************************************
+************************************************************
+************************************************************
+************************************************************/
+/* Margin top */
+.scrollbar-my-p5::-webkit-scrollbar-track {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.scrollbar-my-1::-webkit-scrollbar-track {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.scrollbar-mt-1::-webkit-scrollbar-track {
+  margin-top: 4px;
+}
+.scrollbar-mt-2::-webkit-scrollbar-track {
+  margin-top: 8px;
+}
+.scrollbar-mt-4::-webkit-scrollbar-track {
+  margin-top: 16px;
+}
+.scrollbar-mt-48::-webkit-scrollbar-track {
+  margin-top: 48px;
+}
+.scrollbar-my-2::-webkit-scrollbar-track {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+/* Margin right */
+.scrollbar-ml-20::-webkit-scrollbar-track {
+  margin-right: 20px;
+}
+/* Common table margin */
+.common-table-scrollbar-track::-webkit-scrollbar-track {
+  margin-top: 52px;
+  margin-bottom: 14px;
+}
+/***********************************************************
+************************************************************
+************************************************************
+************************************************************/
+/* Scrollbars */
+/***********************************************************
+************************************************************
+************************************************************
+************************************************************/
+.booking-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
+
+  scrollbar-gutter: stable both-edges;
+}
+.gjn-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  scrollbar-gutter: stable both-edges;
+}
+.sidebar-scrollbar::-webkit-scrollbar {
+  width: 7px;
+  height: 4px;
+  scrollbar-gutter: stable both-edges;
+}
+.thick-scrollbar::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  scrollbar-gutter: stable both-edges;
+}
+.thin-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  scrollbar-gutter: stable both-edges;
+}
+
+@media (max-width: 767px) {
+  .booking-scrollbar::-webkit-scrollbar,
+  .gjn-scrollbar::-webkit-scrollbar,
+  .sidebar-scrollbar::-webkit-scrollbar,
+  .thick-scrollbar::-webkit-scrollbar,
+  .thin-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/***********************************************************
+************************************************************
+************************************************************
+************************************************************/
+/* Scrollbar tracks */
+/***********************************************************
+************************************************************
+************************************************************
+************************************************************/
+.booking-scrollbar::-webkit-scrollbar-track {
+  border-radius: 2rem;
+  /* background: #b5b5b5; */
+  /* background: #888888; */
+}
+.sidebar-scrollbar::-webkit-scrollbar-track {
+  margin-top: 30px;
+  border-radius: 2rem;
+  background: #2a2e37;
+}
+.thick-scrollbar::-webkit-scrollbar-track,
+.thin-scrollbar::-webkit-scrollbar-track {
+  border-radius: 2rem;
+  /* background: #b5b5b5; */
+  background: #afafaf;
+}
+.gjn-scrollbar::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/***********************************************************
+************************************************************
+************************************************************
+************************************************************/
+/* Scrollbar thumbs */
+/***********************************************************
+************************************************************
+************************************************************
+************************************************************/
+.booking-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  /* background: #bdbec1; primary-300 */
+  background: #696666ac;
+  /* background: #2a2e37; */ /* primary-400 */
+  /* border: 0.5px solid #4339f2; */
+}
+.sidebar-scrollbar::-webkit-scrollbar-thumb {
+  background: #5d5d5d;
+  border-radius: 2rem;
+  /* border: 0.5px solid #2a2e37; */
+}
+.thick-scrollbar::-webkit-scrollbar-thumb,
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #bdbec1; /* primary-300 */
+  /* background: #2a2e37; */ /* primary-400 */
+  /* border: 0.5px solid #4339f2; */
+}
+/* .gjn-scrollbar::-webkit-scrollbar-thumb { */
+/* border: 0.5px solid #062805; */
+/* background: #8a918c; */
+/* } */

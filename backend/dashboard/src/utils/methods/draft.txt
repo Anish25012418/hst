@@ -1,0 +1,38 @@
+
+imagesPattern [ 'workshop_seven_flag_of_the_peoples_republic_of_chinasvg',  'workshop_six_lukla',  ]
+
+excludedFilesPattern [
+  'workshop_seven_flag',
+  'workshop_five_piligrimage',     
+  'workshop_four_heli',
+  'workshop_one_gosainkunda',      
+  'workshop_six_lukla',     
+  'workshop_three_chhukung',       
+  'workshop_two_mount'
+    'workshop_seven_nepali',
+  'workshop_seven_piligrimage',    
+  'workshop_seven_ulleri',
+  workshop_seven_halesi,
+]
+
+
+
+my output should be: 
+excludedFiles [
+'workshop_seven_flag_of_the_peoples_republic_of_chinasvg',
+  'workshop_six_lukla',
+  workshop_five_piligrimage,
+  workshop_four_heli,
+  'workshop_one_gosainkunda',     
+      'workshop_three_chhukung',       
+  'workshop_two_mount'
+]
+
+
+filesToDelete [
+    'workshop_seven_flag',
+      'workshop_seven_halesi.png',     
+  'workshop_seven_nepali',
+  'workshop_seven_piligrimage',    
+  'workshop_seven_ulleri',
+]

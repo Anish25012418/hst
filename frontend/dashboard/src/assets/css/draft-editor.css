@@ -1,0 +1,178 @@
+/* Editor Wrapper */
+.draft-editor.editor-wrapper {
+  border: 1px solid #b0bec5;
+  background: #fff;
+  padding: 8px;
+  min-height: 400px;
+  position: relative; /* Ensure proper positioning */
+}
+
+.draft-editor.editor-wrapper:hover {
+  border: 2px solid #2196f3;
+}
+
+.draft-editor .editor-container {
+  width: 100%;
+  padding: 2px 6px;
+  color: #64748b;
+}
+
+/* Toolbar */
+.draft-editor .editor-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px; /* Add spacing between toolbar and editor */
+}
+
+.draft-editor .editor-toolbar button {
+  margin-right: 8px;
+  font-size: 13px;
+  padding: 2px 6px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Block Styles */
+.draft-editor .superFancyBlockquote {
+  color: #999;
+  background: #fff;
+  font-style: italic;
+  border-left: 2px solid #999;
+  padding-left: 10px;
+}
+
+.draft-editor .code-block-class {
+  font-family: "Fira Code", monospace;
+  font-size: inherit;
+  background: #ffeff0;
+  font-style: italic;
+  word-wrap: break-word;
+  padding: 0.3rem 2rem;
+}
+
+.draft-editor .leftAlign {
+  text-align: left;
+}
+
+.draft-editor .rightAlign {
+  text-align: right;
+}
+
+.draft-editor .centerAlign {
+  text-align: center;
+}
+
+.draft-editor .justifyAlign {
+  text-align: justify;
+}
+
+/* List item styles */
+.draft-editor .ordered-list-item-class {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+.draft-editor .unordered-list-item-class {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Header styles */
+.draft-editor .header-one-class {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.draft-editor .header-two-class {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.draft-editor .header-three-class {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.draft-editor .header-four-class {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.draft-editor .header-five-class {
+  font-size: 0.83em;
+  font-weight: bold;
+}
+
+.draft-editor .header-six-class {
+  font-size: 0.67em;
+  font-weight: bold;
+}
+
+.draft-editor .unstyled-class {
+  margin: 0;
+  padding: 0;
+}
+
+/* Additional styles for other blocks */
+.draft-editor .blockquote-class {
+  font-style: italic;
+  margin: 16px 0;
+  padding-left: 10px;
+  border-left: 5px solid #ccc;
+}
+
+.draft-editor .atomic-class {
+  margin: 16px 0;
+  display: block;
+}
+
+/* Inline styles */
+.draft-editor .bold-class {
+  font-weight: bold;
+}
+
+.draft-editor .italic-class {
+  font-style: italic;
+}
+
+.draft-editor .underline-class {
+  text-decoration: underline;
+}
+
+.draft-editor .strikethrough-class {
+  text-decoration: line-through;
+}
+
+/* Paragraph */
+.draft-editor .paragraph-class {
+  margin: 0;
+  padding: 0;
+}
+
+/* Link styles */
+.draft-editor .link-class {
+  color: #1e88e5; /* Blue color for links */
+  text-decoration: underline; /* Underline to indicate a link */
+}
+
+.draft-editor .link-class:hover {
+  color: #0d47a1; /* Darker blue on hover */
+}
+
+.draft-editor .link-class:active {
+  color: #0d47a1; /* Retain darker blue on active */
+}
+
+/* Additional styles */
+.draft-editor .toolbar-button.active {
+  background-color: #f0f0f0; /* Highlight active buttons */
+  border-radius: 4px; /* Rounded corners for buttons */
+}
+
+/* Ensure proper line heights for readability */
+.draft-editor .editor-container {
+  line-height: 1.5;
+}

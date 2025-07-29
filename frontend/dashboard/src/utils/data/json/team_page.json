@@ -1,0 +1,55 @@
+{
+  "company": {
+    "title": "Meet The Team",
+    "description": "Himalayan Single Track (HST) is a partnership between Santosh and Jenny which was born through a shared passion for mountain biking and it’s development and promotion in Nepal, along with the desire to explore the best tracks and trails with cyclists from around the world. We also made it our company’s policy to support local riders. The Business quickly expanded from three bikes in a small shed in 2011 to 11 staff, 50 Hire bikes, a workshop, Giant Bike Shop and Tours office today. Over the years we have expanded the tours and trails we offer and our team are always on the endless search for new and exciting Single Track! At Himalayan Single Track we are always looking for ways to grow and improve our business in responsible tourism, quality, safety and environmental ethics. We are also the first and only company to date in Nepal to introduce MBLA (Mountain Bike Leaders Award) guide training and use guides certified to standards approved by the British Cycling Association’s guiding scheme and to implement risk assessment plans making your adventure with Himalayan Single Track rewarding and safe. While they are the founders of Himalayan Single Track, Santosh and Jenny truly believe that our team and guide’s are the true nuts and bolts of the company!"
+  },
+  "teamFounders": [
+    {
+      "image": "https://guamhomesforsaleandrent.com/sites/default/files/team10.jpg",
+      "name": "Jenny",
+      "designation": "Co-founder/ Operation Manager"
+    },
+    {
+      "image": "https://guamhomesforsaleandrent.com/sites/default/files/team5.jpg",
+      "name": "Santosh Rai",
+      "designation": "Co-founder, Tour Leader, Mechanic"
+    }
+  ],
+  "teamMembers": [
+    {
+      "image": "https://web.himalayansingletrack.com/web_images/teams/team1.jpg",
+      "name": "Yashu Sthapit",
+      "designation": "Jr. Developer"
+    },
+    {
+      "image": "https://guamhomesforsaleandrent.com/sites/default/files/team10.jpg",
+      "name": "Udip Yakha Rai",
+      "designation": "Sr. Developer"
+    },
+    {
+      "image": "https://guamhomesforsaleandrent.com/sites/default/files/team10.jpg",
+      "name": "Bikesh Maharjan",
+      "designation": "Sr. Network Engineer"
+    },
+    {
+      "image": "https://guamhomesforsaleandrent.com/sites/default/files/team10.jpg",
+      "name": "Subodh Chhetri",
+      "designation": "Sr. Network Engineer"
+    },
+    {
+      "image": "https://guamhomesforsaleandrent.com/sites/default/files/team10.jpg",
+      "name": "Devraj KC",
+      "designation": "Sr. Network Engineer"
+    },
+    {
+      "image": "https://guamhomesforsaleandrent.com/sites/default/files/team10.jpg",
+      "name": "Santosh Thapa",
+      "designation": "Sr. Network Engineer"
+    },
+    {
+      "image": "https://guamhomesforsaleandrent.com/sites/default/files/team10.jpg",
+      "name": "Pradip Shrestha",
+      "designation": "Sr. Network Engineer"
+    }
+  ]
+}

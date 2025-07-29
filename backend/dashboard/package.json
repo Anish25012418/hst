@@ -1,0 +1,55 @@
+{
+  "name": "hst-dashboard",
+  "version": "0.0.0",
+  "description": "Managed by staff of hst",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node src/app.js",
+    "dev": "cross-env NODE_ENV=development nodemon src/app.js",
+    "ts-build": "tsc",
+    "webpack:build": "webpack --config webpack.config.js",
+    "webpack:prod-build": "webpack --mode production --config webpack.config.js",
+    "webpack:dev-build": "webpack --mode development --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/udip-rai/himalayan-single-track.git"
+  },
+  "keywords": [
+    "himlayan",
+    "single",
+    "track",
+    "tour",
+    "travel",
+    "mtb",
+    "rider"
+  ],
+  "author": "Udip Rai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/udip-rai/himalayan-single-track/issues"
+  },
+  "homepage": "https://github.com/udip-rai/himalayan-single-track#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cross-env": "^7.0.3",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.14",
+    "winston": "^3.13.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "cors": "^2.8.5",
+    "dpdm": "^3.14.0",
+    "eslint": "^8.57.0",
+    "nodemon": "^3.1.0"
+  }
+}

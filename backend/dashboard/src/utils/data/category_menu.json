@@ -1,0 +1,69 @@
+[
+  {
+    "title": "Mtb Tours",
+    "slug": "mtb-tours",
+    "categories": [
+      {
+        "id": "66b073fe99a178fc832baa49",
+        "title": "Enduro",
+        "slug": "enduro"
+      },
+      {
+        "id": "66b073fe99a178fc832baa49",
+        "title": "Cross Country",
+        "slug": "cross-country"
+      },
+      {
+        "id": "66b073fe99a178fc832baa49",
+        "title": "Heli Biking",
+        "slug": "heli-biking"
+      }
+    ]
+  },
+  {
+    "title": "Cycle Tour",
+    "slug": "cycle-tour",
+    "categories": []
+  },
+  {
+    "title": "Multi Adventure",
+    "slug": "multi-adventure",
+    "categories": []
+  },
+  {
+    "title": "Trekking",
+    "slug": "trekking",
+    "categories": []
+  },
+  {
+    "title": "Day & Overnight Trips",
+    "slug": "day-overnight-trips",
+    "categories": [
+      {
+        "id": "66b073fe99a178fc832baa49",
+        "title": "Kathmandu",
+        "slug": "kathmandu"
+      },
+      {
+        "id": "66b073fe99a178fc832baa49",
+        "title": "Pokhara",
+        "slug": "pokhara"
+      },
+      {
+        "id": "66b073fe99a178fc832baa49",
+        "title": "Overnight Trips",
+        "slug": "overnight-trips"
+      },
+      {
+        "id": "66b073fe99a178fc832baa49",
+        "title": "Skill Sessions",
+        "slug": "skills-session"
+      }
+    ]
+  },
+  {
+    "title": "Bhutan",
+    "slug": "bhutan",
+    "categories": []
+  }
+]

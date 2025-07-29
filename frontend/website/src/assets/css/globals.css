@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer utilities {
+  Menu in navbar
+  @media screen and (min-width: 1024px) {
+    Apply padding-right to the first item in every fourth group of items
+    .fourth-item > :nth-child(5) {
+      padding-left: 50px !important;
+    }
+    .fourth-item > :nth-child(4) {
+      padding-right: 24px !important;
+    }
+  }
+} */
+
+.display-webkit-box {
+  @apply flex;
+  display: -webkit-box;
+}
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+
+body {
+  min-width: 360px;
+  max-width: 2028px;
+  margin: 0 auto;
+  /* background-color: #fff; */
+  /* background-color: #90ee90; */
+}
+
+/* Parallax Image */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ----------------------------- */
+/* Blog image design */
+/* ----------------------------- */
+.blob-img {
+  border-radius: 50% 25% / 25% 50%;
+  width: 100%;
+  height: auto;
+}
+
+/* ----------------------------- */
+/* Bicycle Loader */
+/* ----------------------------- */
+.bike {
+  display: block;
+  margin: auto;
+  width: 16em;
+  height: auto;
+}
+.bike__body,
+.bike__front,
+.bike__handlebars,
+.bike__pedals,
+.bike__pedals-spin,
+.bike__seat,
+.bike__spokes,
+.bike__spokes-spin,
+.bike__tire {
+  animation: bikeBody 3s ease-in-out infinite;
+  stroke: var(--primary);
+  transition: stroke var(--trans-dur);
+}
+.bike__front {
+  animation-name: bikeFront;
+}
+.bike__handlebars {
+  animation-name: bikeHandlebars;
+}
+.bike__pedals {
+  animation-name: bikePedals;
+}
+.bike__pedals-spin {
+  animation-name: bikePedalsSpin;
+}
+.bike__seat {
+  animation-name: bikeSeat;
+}
+.bike__spokes,
+.bike__tire {
+  stroke: currentColor;
+}
+.bike__spokes {
+  animation-name: bikeSpokes;
+}
+.bike__spokes-spin {
+  animation-name: bikeSpokesSpin;
+}
+.bike__tire {
+  animation-name: bikeTire;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: hsl(var(--hue), 90%, 10%);
+    --fg: hsl(var(--hue), 90%, 90%);
+  }
+}
+
+/* Animations */
+@keyframes bikeBody {
+  from {
+    stroke-dashoffset: 79;
+  }
+  33%,
+  67% {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -79;
+  }
+}
+@keyframes bikeFront {
+  from {
+    stroke-dashoffset: 19;
+  }
+  33%,
+  67% {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -19;
+  }
+}
+@keyframes bikeHandlebars {
+  from {
+    stroke-dashoffset: 10;
+  }
+  33%,
+  67% {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -10;
+  }
+}
+@keyframes bikePedals {
+  from {
+    animation-timing-function: ease-in;
+    stroke-dashoffset: -25.133;
+  }
+  33%,
+  67% {
+    animation-timing-function: ease-out;
+    stroke-dashoffset: -21.991;
+  }
+  to {
+    stroke-dashoffset: -25.133;
+  }
+}
+@keyframes bikePedalsSpin {
+  from {
+    transform: rotate(0.1875turn);
+  }
+  to {
+    transform: rotate(3.1875turn);
+  }
+}
+@keyframes bikeSeat {
+  from {
+    stroke-dashoffset: 5;
+  }
+  33%,
+  67% {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -5;
+  }
+}
+@keyframes bikeSpokes {
+  from {
+    animation-timing-function: ease-in;
+    stroke-dashoffset: -31.416;
+  }
+  33%,
+  67% {
+    animation-timing-function: ease-out;
+    stroke-dashoffset: -23.562;
+  }
+  to {
+    stroke-dashoffset: -31.416;
+  }
+}
+@keyframes bikeSpokesSpin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(3turn);
+  }
+}
+@keyframes bikeTire {
+  from {
+    animation-timing-function: ease-in;
+    stroke-dashoffset: 56.549;
+    transform: rotate(0);
+  }
+  33% {
+    stroke-dashoffset: 0;
+    transform: rotate(0.33turn);
+  }
+  67% {
+    animation-timing-function: ease-out;
+    stroke-dashoffset: 0;
+    transform: rotate(0.67turn);
+  }
+  to {
+    stroke-dashoffset: -56.549;
+    transform: rotate(1turn);
+  }
+}

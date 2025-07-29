@@ -1,0 +1,95 @@
+# Node.js related
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Dependency directories
+jspm_packages/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Environment variables
+# .env
+.env.*.local
+
+# Next.js specific
+.next/
+out/
+
+# Production
+/build
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+*.log
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Testing
+coverage/
+*.lcov
+
+# MacOS
+.DS_Store
+
+# Log files
+logs/
+*.log
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# eslint cache
+.eslintcache
+
+# Parcel-bundler cache (for other potential uses in the project)
+.cache/
+
+# Storybook
+storybook-static/
+
+# Sentry
+.sentryclirc
+
+# Build directories
+build/
+dist/
+.cache/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Bower
+bower_components/
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# JetBrains IDEs
+.idea/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo

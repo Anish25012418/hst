@@ -1,0 +1,98 @@
+/* .w-md-editor-toolbar-divider {
+  display: none;
+}
+
+button[data-name="code"],
+button[data-name="codeBlock"],
+button[data-name="comment"],
+button[data-name="help"],
+button[data-name="hr"],
+button[data-name="image"],
+button[data-name="edit"],
+button[data-name="live"],
+button[data-name="preview"],
+button[data-name="table"] {
+  display: none;
+} */
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  background: #ddd;
+} */
+
+.draft-editor.editor-wrapper {
+  /* width: 768px; */
+  border: 1px solid #b0bec5;
+  border-radius: 0.375rem;
+  background: #fff;
+  padding: 8px 0px;
+  min-height: 200px;
+}
+
+.draft-editor.editor-wrapper:hover {
+  border: 2px solid #2196f3;
+}
+
+.draft-editor .editor-container {
+  width: 100%;
+  /* border: 1px solid green; */
+  padding: 2px 6px;
+  color: #64748b;
+}
+
+.draft-editor .toolbar-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 1fr 1fr;
+}
+
+.draft-editor button {
+  margin-right: 8px;
+  font-size: 13px;
+  padding: 2px 6px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+.draft-editor .superFancyBlockquote {
+  color: #999;
+  background: #fff;
+  /* font-family: "Hoefler Text", Georgia, serif; */
+  font-style: italic;
+  border-left: 2px solid #999;
+  padding-left: 10px;
+}
+
+.draft-editor .codeBlock {
+  font-family: fira-code, monospace;
+  font-size: inherit;
+  background: #ffeff0;
+  font-style: italic;
+  word-wrap: normal;
+  word-wrap: break-word;
+  box-decoration-break: slice;
+  padding: 0.3rem 2rem;
+  border-radius: 0.2rem;
+}
+
+.draft-editor .leftAlign {
+  text-align: left;
+}
+.draft-editor .rightAlign {
+  text-align: right;
+}
+.draft-editor .centerAlign {
+  text-align: center;
+}
+.draft-editor .justifyAlign {
+  text-align: justify;
+}

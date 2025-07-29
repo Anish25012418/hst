@@ -1,0 +1,22 @@
+{
+  "send_message": "Send a message",
+  "get_in_touch": "Get in touch",
+  "caption": "We will respond to your message as soon as possible.",
+  "brand_name": "Himalayan Single Track",
+  "inquiry": "Email us with any questions or inquires . We’d would love to plan you a perfect mountain biking holiday in Himalayas Nepal.We” ll then be back in touch with you within 24 hrs to help you choose your perfect MTB tour in Nepal with us!",
+  "main_branch": {
+    "phone": "+977 9822224444",
+    "email": "info@himalayansingletrack.com",
+    "location": "Thamel - Annapurna Market, Kathmandu"
+  },
+  "kathmandu_branch": {
+    "phone": "+977 9823100104",
+    "email": "himalayansingletrack@gmail.com",
+    "location": "Thamel - Annapurna Market, Kathmandu"
+  },
+  "pokhara_branch": {
+    "phone": "+977 981-3873020, +977 9802822902",
+    "email": "himalayansingletrack@gmail.com",
+    "location": "HST, Street 16 Middle Path, Lakeside Pokhara"
+  }
+}

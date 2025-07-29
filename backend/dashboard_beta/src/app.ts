@@ -1,0 +1,61 @@
+/**
+ * @title Main application file
+ **/
+
+// Package imports
+import express from "express";
+import cors from "cors";
+
+// Non-package imports
+import connectDB from "./config/database.js";
+import { PORT } from "./config/env.js";
+import { fileUploadErrorMiddleware } from "./middlewares/errorMiddleware.js";
+import authRoute from "./routes/authRoute.js";
+
+////////////////////////////////////////
+////////////////////////////////////////
+// Initialize app
+////////////////////////////////////////
+////////////////////////////////////////
+const app = express();
+
+////////////////////////////////////////
+////////////////////////////////////////
+// Middlewares
+////////////////////////////////////////
+////////////////////////////////////////
+
+// Parse JSON bodies
+app.use(express.json());
+
+// Enable CORS
+app.use(cors());
+
+// Error-handling middleware
+app.use(fileUploadErrorMiddleware);
+
+////////////////////////////////////////
+////////////////////////////////////////
+// Routers
+////////////////////////////////////////
+////////////////////////////////////////
+app.use("/user", authRoute);
+
+////////////////////////////////////////
+////////////////////////////////////////
+// Start the server
+////////////////////////////////////////
+////////////////////////////////////////
+
+// Async function for connecting to the database
+const startServer = async () => {
+  await connectDB(); // Wait for the database connection to be established
+
+  app.listen(PORT, () => {
+    console.log(`Server started on PORT: ${PORT}`);
+  });
+};
+
+// Start the server
+console.log("Trying to connect to the database...");
+startServer();

@@ -1,0 +1,31 @@
+.grid {
+  display: grid;
+  grid-template-rows: [header] 80px [sidebar] 300px [body] 1fr;
+  grid-template-columns: [sidebar] 280px [body] calc(100vw - 280px);
+  gap: 1rem;
+
+  /* Define grid template areas */
+  grid-template-areas:
+    "header header header"
+    "sidebar body body"
+    "sidebar body body";
+  height: 100vh; /* Ensure the grid covers the entire viewport height */
+}
+
+.header {
+  grid-area: header;
+  background-color: skyblue;
+  /* Additional styling for the header */
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: lightcoral;
+  /* Additional styling for the sidebar */
+}
+
+.body {
+  grid-area: body;
+  background-color: lightgreen;
+  /* Additional styling for the body */
+}
