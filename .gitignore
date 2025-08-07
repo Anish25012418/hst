@@ -9,7 +9,6 @@ yarn-error.log*
 jspm_packages/
 pnpm-lock.yaml
 yarn.lock
-package-lock.json
 
 # Environment variables
 # .env
