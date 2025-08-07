@@ -5,7 +5,7 @@ const path = require("path");
 // Global variables
 const mode = process.env.NODE_ENV || "development";
 const IS_PRODUCTION = process.env.NODE_ENV === "production";
-const envFilePath = path.resolve(__dirname, `../../.env.${mode}`);
+const envFilePath = path.resolve(__dirname, `../../.env`);
 
 try {
   // Load environment variables from the selected file

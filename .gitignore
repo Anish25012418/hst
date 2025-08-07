@@ -14,6 +14,7 @@ package-lock.json
 # Environment variables
 # .env
 .env.*.local
+/backend/dashboard/.env
 
 # Next.js specific
 .next/
@@ -93,3 +94,4 @@ coverage/
 
 # TypeScript
 *.tsbuildinfo
+
