@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const env = require("./env");
 
 // Global variables
-const { DATABASE_URL } = env;
+const { DATABASE_URL } = process.env;
 
 // Main
 const connectDB = async () => {
