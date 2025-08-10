@@ -32,7 +32,7 @@ jobs:
         run: npm install
 
       - name: Create backend .env file
-        working-directory: ./backend/dashboard
+        working-directory: ./backend
         run: |
           touch .env
           echo "${{ secrets.PROD_BACKEND_ENV }}" > .env
