@@ -32,12 +32,13 @@ jobs:
         run: npm install
 
       - name: Create backend .env file
-        working-directory: ./backend/dashboard
         run: |
-          touch .env
-          echo "${{ secrets.PROD_BACKEND_ENV }}" > .env
+          echo "${{ secrets.PROD_BACKEND_ENV }}" > backend/.env
+          echo "Created backend/.env with:"
+          cat backend/.env
 
       - name: Start backend with PM2
         working-directory: ./backend/dashboard
         run: |
-          pm2 restart backend || pm2 start app.js --name backend
+          /home/ubuntu/.nvm/versions/node/v22.18.0/bin/pm2 restart backend --update-env || /home/ubuntu/.nvm/versions/node/v22.18.0/bin/pm2 start app.js --name backend --update-env
+
