@@ -33,7 +33,7 @@ jobs:
 
       - name: Create backend .env file
         run: |
-          echo "${{ secrets.PROD_BACKEND_ENV }}" > backend/.env
+          echo "${{ secrets.PROD_BACKEND_ENV }}" > backend/dashboard/.env
           echo "Created backend/.env with:"
           cat backend/.env
 
