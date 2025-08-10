@@ -32,12 +32,21 @@ jobs:
         run: npm install
 
       - name: Create backend .env file
-        working-directory: ./backend
         run: |
-          touch .env
-          echo "${{ secrets.PROD_BACKEND_ENV }}" > .env
+          echo "${{ secrets.PROD_BACKEND_ENV }}" > backend/.env
+          echo "Created backend/.env with:"
+          cat backend/.env
 
       - name: Start backend with PM2
         working-directory: ./backend/dashboard
         run: |
-          npx pm2 restart backend || pm2 start app.js --name backend
+          pm2 restart backend --update-env || pm2 start app.js --name backend --update-env
+
+      - name: Reset PM2 process
+        run: |
+          pm2 delete backend || true
+
+      - name: Debug DATABASE_URL
+        run: |
+          node -e "require('dotenv').config({ path: 'backend/.env' }); console.log('DATABASE_URL:', process.env.DATABASE_URL)"
+
