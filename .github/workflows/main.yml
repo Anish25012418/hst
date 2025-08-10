@@ -40,11 +40,11 @@ jobs:
       - name: Start backend with PM2
         working-directory: ./backend/dashboard
         run: |
-          pm2 restart backend --update-env || pm2 start app.js --name backend --update-env
+          /home/ubuntu/.nvm/versions/node/v22.18.0/bin/pm2 restart backend --update-env || /home/ubuntu/.nvm/versions/node/v22.18.0/bin/pm2 start app.js --name backend --update-env
 
       - name: Reset PM2 process
         run: |
-          pm2 delete backend || true
+          /home/ubuntu/.nvm/versions/node/v22.18.0/bin/pm2 delete backend || true
 
       - name: Debug DATABASE_URL
         run: |
