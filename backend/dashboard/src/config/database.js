@@ -1,9 +1,22 @@
 // Import - default
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+const path = require("path");
 
 // Import - config
 // Non-package imports
-const env = require("./env");
+const envFilePath = path.resolve(__dirname, `../../.env`);
+
+try {
+  // Load environment variables from the selected file
+  dotenv.config({ path: envFilePath });
+} catch (err) {
+  console.error(
+    `Error loading environment variables from ${envFilePath}:`,
+    err
+  );
+  process.exit(1); // Exit the process if there's an error loading env variables
+}
 
 // Global variables
 const { DATABASE_URL } = process.env;
