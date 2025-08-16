@@ -40,7 +40,8 @@ const PRODUCTION_URLS = [
   // Production domains for the application
   'https://app.himalayansingletrack.com',
   'https://dashboard.himalayansingletrack.com',
-  'https://web.himalayansingletrack.com'
+  'https://web.himalayansingletrack.com',
+  'https://newapp.himalayansingletrack.com'
 ];
 
 // Set ALLOWED_ORIGINS based on the environment
