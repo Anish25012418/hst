@@ -47,6 +47,9 @@ const corsOptions = {
     return callback(null, true);
   },
   credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'], // Add explicit methods
+  allowedHeaders: ['Content-Type', 'Authorization', 'Cookie', 'X-Requested-With'], // Add explicit headers
+  exposedHeaders: ['Set-Cookie'], // If you need to expose cookies
 };
 app.use(cors(corsOptions));
 
