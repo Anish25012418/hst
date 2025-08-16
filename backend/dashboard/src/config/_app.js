@@ -29,6 +29,10 @@ const LOCAL_DEVELOPMENT_URLS = [
   'http://front.localhost.com:6789', // Custom port for frontend domain
   'http://front.localhost.com:3000',  // Another custom port for frontend domain
 
+  'https://app.himalayansingletrack.com',
+  'https://dashboard.himalayansingletrack.com',
+  'https://web.himalayansingletrack.com'
+
 ];
 
 // Define common URLs for production
