@@ -41,7 +41,8 @@ const PRODUCTION_URLS = [
   'https://app.himalayansingletrack.com',
   'https://dashboard.himalayansingletrack.com',
   'https://web.himalayansingletrack.com',
-  'https://newapp.himalayansingletrack.com'
+  'https://newapp.himalayansingletrack.com',
+  'https://newweb.himalayansingletrack.com'
 ];
 
 // Set ALLOWED_ORIGINS based on the environment
