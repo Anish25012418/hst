@@ -5,7 +5,7 @@
 
   const port = parseInt(process.env.PORT || '3000', 10);
   const dev = process.env.NODE_ENV !== 'production';
-  const hostname = process.env.NODE_ENV !== 'production' ? 'localhost' : 'himalayansingletrack.com';
+  const hostname = process.env.NODE_ENV !== 'production' ? 'localhost' : 'newweb.himalayansingletrack.com';
   const app = next.default({ dev, hostname, port });
   const handle = app.getRequestHandler();
 
