@@ -53,6 +53,8 @@ const CustomCard = (props: CustomCardSchema) => {
   return (
     <div onClick={() => linkHref && route.push(linkHref)}>
       <Card
+        onResize={() => {}}
+        onResizeCapture={() => {}}
         className={`max-w-[24rem] h-[300px] lg:h-[400px] w-[200px] lg:w-[600px] overflow-hidden border-none shadow-none rounded-none p-0 ${bgColor} cursor-pointer`}
       >
         <CardHeader
@@ -62,6 +64,8 @@ const CustomCard = (props: CustomCardSchema) => {
           className="m-0 rounded-none h-[300px]"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
+          onResize={() => {}}
+          onResizeCapture={() => {}}
         >
           <Image
             src={imageSrc}
@@ -85,7 +89,10 @@ const CustomCard = (props: CustomCardSchema) => {
             />
           )}
         </CardHeader>
-        <CardBody className={className}>
+        <CardBody
+          onResize={() => {}}
+          onResizeCapture={() => {}}
+          className={className}>
           <CustomTypography
             className={`${className} text-base font-semibold lg:text-xl lg:font-bold`}
           >

@@ -18,6 +18,8 @@ const BlogCard = (props: BlogSchema) => {
   return (
     <div>
       <Card
+        onResize={() => {}}
+        onResizeCapture={() => {}}
         shadow={false}
         className="relative grid h-[10rem] md:h-[20rem] lg:h-[30rem] w-full items-end justify-center overflow-hidden text-center rounded-none transition duration-200 hover:scale-105 cursor-pointer"
       >
@@ -26,6 +28,8 @@ const BlogCard = (props: BlogSchema) => {
           shadow={false}
           color="transparent"
           className="absolute inset-0 m-0 h-full w-full rounded-none"
+          onResize={() => {}}
+          onResizeCapture={() => {}}
         >
           <Image
             width={10}
@@ -36,7 +40,10 @@ const BlogCard = (props: BlogSchema) => {
           />
           <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
         </CardHeader>
-        <CardFooter className="absolute bottom-0 py-14 px-6 md:px-12">
+        <CardFooter
+          onResize={() => {}}
+          onResizeCapture={() => {}}
+          className="absolute bottom-0 py-14 px-6 md:px-12">
           <CustomTypography
             variant="h5"
             color="white"

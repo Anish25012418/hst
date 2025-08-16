@@ -19,16 +19,23 @@ const TestimonialCard = (props: TestimonialSchema) => {
   return (
     <div>
       <Card
+        onResize={() => {}}
+        onResizeCapture={() => {}}
         shadow={false}
         className="grid h-[25rem] w-[296px] md:w-[30rem] items-center justify-center text-center bg-gray-200 shadow-lg mx-auto"
       >
-        <CardBody className="flex items-center justify-center flex-col px-6 md:px-12">
+        <CardBody
+          className="flex items-center justify-center flex-col px-6 md:px-12"
+          onResize={() => {}}
+          onResizeCapture={() => {}}>
           <Avatar
             size="xl"
             variant="circular"
             alt="testimonial-image"
             className="border-2 border-white"
             src={image}
+            onResize={() => {}}
+            onResizeCapture={() => {}}
           />
           <CustomTypography variant="h5" className="mb-2">
             {name}

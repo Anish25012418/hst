@@ -35,6 +35,8 @@ const PosterCard = (props: PosterCardSchema) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <Card
+      onResize={() => {}}
+      onResizeCapture={() => {}}
       className={`max-w-[120px] sm:max-w-[170px] md:max-w-[232px] lg:max-w-[132px] xl:max-w-[200px] h-full overflow-hidden border-none shadow-none p-0 cursor-pointer`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -47,6 +49,8 @@ const PosterCard = (props: PosterCardSchema) => {
         className={`m-0 rounded-none h-[120px] w-[120px] sm:w-[170px] sm:h-[170px] md:w-[232px] md:h-[232px] lg:h-[144px] lg:w-[132px] xl:h-[156px] xl:w-[156px] flex items-center justify-center transition hover:duration-700`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onResize={() => {}}
+        onResizeCapture={() => {}}
         {...rest}
       >
         <Image
@@ -63,7 +67,11 @@ const PosterCard = (props: PosterCardSchema) => {
           priority
         />
       </CardHeader>
-      <CardBody className="flex items-center justify-center p-0 m-0" {...rest}>
+      <CardBody
+        className="flex items-center justify-center p-0 m-0"
+        {...rest}
+        onResize={() => {}}
+        onResizeCapture={() => {}}>
         <div>
           <CustomTypography
             className={`${

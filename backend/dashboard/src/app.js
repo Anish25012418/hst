@@ -33,21 +33,26 @@ const app = express();
 // Middlewares
 app.use(express.json()); // Parse JSON bodies
 app.use(express.urlencoded({ extended: false })); // Accept form data requests
-app.use(
-  cors({
-    origin: (origin, callback) => {
-      // Allow requests with no origin (like mobile apps, curl requests)
-      if (!origin) return callback(null, true);
-      if (ALLOWED_ORIGINS.indexOf(origin) === -1) {
-        const msg =
-          "The CORS policy for this site does not allow access from the specified Origin.";
-        return callback(new Error(msg), false);
-      }
-      return callback(null, true);
-    },
-    credentials: true, // Enable credentials (cookies, authorization headers, TLS client certificates)
-  })
-);
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    // Allow requests with no origin (like mobile apps or curl)
+    if (!origin) return callback(null, true);
+
+    if (ALLOWED_ORIGINS.indexOf(origin) === -1) {
+      console.error("❌ Rejected CORS origin:", origin);
+      return callback(new Error("The CORS policy for this site does not allow access from the specified Origin."), false);
+    }
+    console.log("✅ Allowed CORS origin:", origin);
+    return callback(null, true);
+  },
+  credentials: true,
+};
+app.use(cors(corsOptions));
+
+// Handle preflight OPTIONS requests globally
+app.options("*", cors(corsOptions));
+
 app.use(cookieParser()); // Enable cookies
 app.use(express.static(path.resolve(__dirname, "../public"))); // Middleware to serve static files from the "public" folder
 app.use(customApiLogger(), logRequest, logResponse); // Logs

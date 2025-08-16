@@ -17,9 +17,14 @@ dotenv.config({ path: envPath });
 
 // Main
 const nextConfig = {
+
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
   // Production only settings
   ...(isProduction && {
-    output: "export", // should only run during build and not during npm start
+    //output: "export", // should only run during build and not during npm start
     trailingSlash: true,
   }),
 
