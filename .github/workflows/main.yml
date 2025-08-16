@@ -33,9 +33,9 @@ jobs:
 
       - name: Create backend .env file
         run: |
-          echo "${{ secrets.PROD_BACKEND_ENV }}" > backend/.env
-          echo "Created backend/.env with:"
-          cat backend/.env
+          echo "${{ secrets.PROD_BACKEND_ENV }}" > backend/dashboard/.env
+          echo "Created backend/dashboard/.env with:"
+          cat backend/dashboard/.env
 
       - name: Start backend with PM2
         working-directory: ./backend/dashboard
