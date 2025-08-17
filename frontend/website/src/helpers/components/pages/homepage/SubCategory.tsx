@@ -53,7 +53,7 @@ const SubCategory = (props: any) => {
                   <CustomCard
                     linkHref={slugs?.[0]}
                     imageSrc={getApiImg(imageThumbnailPic)}
-                    videoSrc="https://app.himalayansingletrack.com/web_images/cycle.mp4"
+                    videoSrc="image/web_images/cycle.mp4"
                     imageAlt={title}
                     title={title}
                     isPrimaryYellow

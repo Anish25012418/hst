@@ -59,8 +59,18 @@ const KathmanduDayTripsPage = () => {
               rides for every style and level of rider! Make your choice!
             </CustomTypography>
 
+            <div className="mt-12">
+              <iframe className="w-full md:h-[600px]" src="https://www.youtube.com/embed/M4e35da23gQ"
+                      title="MTB Kathmandu Valley"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen></iframe>
+            </div>
+
+
+
             {kathmanduDayTrips.map((trip, index) => (
-              <div key={index} className="mt-20">
+              <div key={index} className="mt-16">
                 <CustomTypography className="text-center capitalize text-2xl font-bold pb-1">
                   {trip.title}
                 </CustomTypography>

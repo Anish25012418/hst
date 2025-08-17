@@ -18,23 +18,25 @@ const CircleSection = (props: any) => {
   const { bg, color, imgName, title, description } = props;
   return (
     <div
-      className={`${bg} px-8 py-12 flex flex-col justify-center items-center gap-3`}
+      className={`${bg} px-4 sm:px-6 md:px-8 py-12 flex flex-col justify-center items-center gap-3`}
     >
       <div className="w-full h-40 xl:min-h-64 xl:max-h-64 cursor-pointer">
         <Image
-          src={`${NEXT_PUBLIC_HST_APP_URL}/homepage/${imgName}`}
+          src={`/image/web_images/homepage/${imgName}`}
           alt={imgName}
           className="w-full h-full transition duration-300 hover:scale-105 object-contain"
           width={10}
           height={10}
         />
       </div>
+
       <CustomTypography
         variant="h4"
         className={`${color} text-center font-[600] h-[32px] flex items-start`}
       >
         {title}
       </CustomTypography>
+
       <CustomTypography
         className={`${color} text-center font-[400] text-sm max-h-[112px]`}
       >
@@ -89,8 +91,7 @@ const WhyUs = (props: any) => {
       {!isWindowDefined ? (
         <Loader />
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-4">
-          {/* Professional Guide */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-4 px-4 md:px-0 lg:px-48">
           {allCircleData(data)?.map((item: any, idx: number) => (
             <CircleSection key={idx} {...item} />
           ))}

@@ -42,15 +42,15 @@ const Testimonial = (props: any) => {
   return (
     <>
       <Image
-        src="https://app.himalayansingletrack.com/web_images/testimonial_header_wave.svg"
+        src="/image/web_images/testimonial_header_wave.svg"
         alt="svg"
         className="w-[1920px] mt-4"
         width={0}
         height={0}
       />
       <div className="bg-gradient-to-b from-[#B9BCBE] to-white w-full h-auto pb-10 max-w-[2028px]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <div className="mb-4 flex flex-col items-center justify-center px-10 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:ml-56">
+          <div className="mb-4 flex flex-col items-center justify-center px-10 md:mt-16">
             <CustomTypography
               variant={isMobile ? "h5" : isXl ? "h3" : "h1"}
               // className="text-base lg:text-3xl font-sm lg:font-xl absolute top-[80px] right-10 "
