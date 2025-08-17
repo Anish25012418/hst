@@ -32,6 +32,8 @@
   },
   "homepage": "https://github.com/udip-rai/himalayan-single-track#readme",
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.864.0",
+    "@aws-sdk/s3-request-presigner": "^3.864.0",
     "cookie-parser": "^1.4.6",
     "cross-env": "^7.0.3",
     "crypto": "^1.0.1",

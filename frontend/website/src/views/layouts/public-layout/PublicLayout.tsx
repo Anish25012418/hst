@@ -24,7 +24,7 @@ export default function PublicLayout(props: DefaultLayoutSchema) {
     <ReactQueryClientProvider>
       <html lang="en">
         <body className={className} suppressHydrationWarning={true}>
-          <div className="min-h-screen flex flex-col">
+          <div className="min-h-screen flex flex-col overflow-x-hidden">
             <Whatsapp/>
             <PublicHeader />
             <main className="flex-1 min-h-[calc(100vh-60px)]">{children}</main>

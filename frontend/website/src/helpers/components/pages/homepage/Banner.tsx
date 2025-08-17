@@ -48,7 +48,7 @@ const Banner = (props: any) => {
       {/* <div className="absolute -bottom-1 z-20"> */}
       <div className="absolute bottom-[calc(100px-4px)] z-20">
         <Image
-          src="https://app.himalayansingletrack.com/web_images/section_one_banner_footer.png"
+          src="/image/web_images/section_one_banner_footer.png"
           alt="banner_img"
           className="w-full"
           width={10}

@@ -59,7 +59,7 @@ export default function PublicFooter() {
         {/* <Image src={MTB_Banner_jpg} alt="" className="w-full" /> */}
         <Image
           // src={footer_banner}
-          src={"https://app.himalayansingletrack.com/web_images/footer_banner.png"}
+          src={"/image/web_images/footer_banner.png"}
           alt="footer_banner.png"
           className="w-full h-full"
           width={10}
@@ -74,7 +74,7 @@ export default function PublicFooter() {
         <div
           className="absolute inset-0 parallax z-0"
           style={{
-            backgroundImage: `url(${NEXT_PUBLIC_HST_APP_URL}/homepage/footer_bg.jpg)`,
+            backgroundImage: `url(/image/web_images/homepage/footer_bg.jpg)`,
           }}
         />
 
