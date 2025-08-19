@@ -51,7 +51,14 @@ const CustomCard = (props: CustomCardSchema) => {
   const bgColor = isWhite ? "bg-white" : "bg-black";
 
   return (
-    <div onClick={() => linkHref && route.push(linkHref)}>
+    <div   onClick={() => {
+      if (linkHref) {
+        const normalizedHref = linkHref.startsWith("/")
+          ? linkHref
+          : `/${linkHref}`;
+        route.push(normalizedHref);
+      }
+    }}>
       <Card
         onResize={() => {}}
         onResizeCapture={() => {}}
