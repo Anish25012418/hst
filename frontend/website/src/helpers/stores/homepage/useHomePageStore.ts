@@ -39,12 +39,19 @@ const useHomePageStore = create<UseHomePageStoreSchema>()((set) => ({
         categoryMenu = [],
       } = homePage?.getAllHomepage?.data ?? {};
 
+      const fixedSubcategories = subcategories.map((sub: { slugs: string[]; }) => ({
+        ...sub,
+        slugs: sub.slugs?.map((slug: string) =>
+          slug.replace(/-\/+/g, "/")
+        ) ?? [],
+      }));
+
       // Return the structured data
       return {
         ...state,
         homePage,
         categories,
-        subcategories,
+        subcategories: fixedSubcategories,
         blogs,
         staticPages,
         categoryMenu,

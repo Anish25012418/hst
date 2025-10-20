@@ -1,26 +1,26 @@
 "use client";
 // Default
 import Image from "next/image";
-import { FaPhoneAlt } from "react-icons/fa";
-import { IoIosMail } from "react-icons/io";
-import { IoLocation } from "react-icons/io5";
-import { HST_LOGO_png } from "@/assets/image";
-import  footer_banner  from "@/assets/image/footer_banner.jpeg";
+import {FaPhoneAlt} from "react-icons/fa";
+import {IoIosMail} from "react-icons/io";
+import {IoLocation} from "react-icons/io5";
+import {HST_LOGO_png} from "@/assets/image";
+import footer_banner from "@/assets/image/footer_banner.jpeg";
 
 // Helpers
-import { CustomTypography, NavLink } from "@/helpers/components";
+import {CustomTypography, NavLink} from "@/helpers/components";
 
 // Utils
 import * as lc from "@/utils/constants/layout-constants";
-import { useSafeParseJson } from "@/helpers/hooks";
-import { useStaticPageApi } from "@/helpers/stores";
-import { NEXT_PUBLIC_HST_APP_URL } from "@/config/env";
+import {useSafeParseJson} from "@/helpers/hooks";
+import {useStaticPageApi} from "@/helpers/stores";
+import {NEXT_PUBLIC_HST_APP_URL} from "@/config/env";
 // import { NavItemSchema } from "@/utils/schemas/GlobalSchema";
 
 // Single footer block (there are 4 in total)
 const FooterBlock = (props: any) => {
   // Props
-  const { child } = props;
+  const {child} = props;
 
   return (
     <div className="flex flex-row">
@@ -28,7 +28,7 @@ const FooterBlock = (props: any) => {
         {label}
       </CustomTypography> */}
       <ul className="flex flex-col md:flex-row items-center gap-4 text-white">
-        {child?.map(({ href, label }: any, idx: number) => (
+        {child?.map(({href, label}: any, idx: number) => (
           <NavLink key={idx} href={href} className="text-white">
             {label}
           </NavLink>
@@ -44,7 +44,7 @@ export default function PublicFooter() {
   const currentYear = new Date().getFullYear();
 
   // Fetch Static Page API
-  const { getAllData }: any = useStaticPageApi();
+  const {getAllData}: any = useStaticPageApi();
   const homePageData: any = useSafeParseJson(
     getAllData?.data?.[0]?.homePage,
     {}
@@ -59,9 +59,9 @@ export default function PublicFooter() {
         {/* <Image src={MTB_Banner_jpg} alt="" className="w-full" /> */}
         <Image
           // src={footer_banner}
-          src={"/image/web_images/footer_banner.png"}
-          alt="footer_banner.png"
-          className="w-full h-full"
+          src={"/image/web_images/website_footer.png"}
+          alt="website_footer"
+          className="w-full h-full bg-white"
           width={10}
           height={10}
           priority
@@ -70,7 +70,7 @@ export default function PublicFooter() {
 
       {/* Main Footer */}
       <footer className="relative w-full min-h-[500px]">
-        <div className="absolute inset-0 bg-black/40 h-full w-full z-20" />
+        <div className="absolute inset-0 bg-black/40 h-full w-full z-20"/>
         <div
           className="absolute inset-0 parallax z-0"
           style={{
@@ -82,7 +82,10 @@ export default function PublicFooter() {
           <div className="flex flex-col items-center justify-center my-8 gap-4">
             {/* First row ---------------- About HST*/}
             <div className="flex flex-col items-center justify-center">
-              <Image src={HST_LOGO_png} alt="" />
+              <Image src={"/image/hst_logo.png"}
+                     width={150}
+                     height={150}
+                     alt="HST Logo"/>
               <CustomTypography
                 color="white"
                 className="px-2 lg:px-32 text-center font-semibold"
@@ -113,21 +116,21 @@ export default function PublicFooter() {
                     color="white"
                     className="flex gap-2 items-center mb-2 font-medium"
                   >
-                    <FaPhoneAlt className="text-lg" />
+                    <FaPhoneAlt className="text-lg"/>
                     {contactData?.kathmandu_branch?.phone}
                   </CustomTypography>
                   <CustomTypography
                     color="white"
                     className="flex gap-2 items-center mb-2 font-medium"
                   >
-                    <IoIosMail className="text-lg" />
+                    <IoIosMail className="text-lg"/>
                     {contactData?.kathmandu_branch?.email}
                   </CustomTypography>
                   <CustomTypography
                     color="white"
                     className="flex gap-2 items-center mb-2 font-medium text-center"
                   >
-                    <IoLocation className="text-lg" />
+                    <IoLocation className="text-lg"/>
                     {contactData?.kathmandu_branch?.location}
                   </CustomTypography>
                 </div>
@@ -143,21 +146,21 @@ export default function PublicFooter() {
                     color="white"
                     className="flex gap-2 items-center mb-2 font-medium "
                   >
-                    <FaPhoneAlt className="text-lg" />
+                    <FaPhoneAlt className="text-lg"/>
                     {contactData?.pokhara_branch?.phone}
                   </CustomTypography>
                   <CustomTypography
                     color="white"
                     className="flex gap-2 items-center mb-2 font-medium"
                   >
-                    <IoIosMail className="text-lg" />
+                    <IoIosMail className="text-lg"/>
                     {contactData?.pokhara_branch?.email}
                   </CustomTypography>
                   <CustomTypography
                     color="white"
                     className="flex gap-2 items-center mb-2 font-medium text-center"
                   >
-                    <IoLocation className="text-lg" />
+                    <IoLocation className="text-lg"/>
                     {contactData?.pokhara_branch?.location}
                   </CustomTypography>
                 </div>
@@ -172,8 +175,8 @@ export default function PublicFooter() {
             {/*    className="font-bold"*/}
             {/*  >*/}
             {/*    Quick Links*/}
-              {/*</CustomTypography>*/}
-              {/* <FooterBlock label="Company" child={lc.navMenuList} /> */}
+            {/*</CustomTypography>*/}
+            {/* <FooterBlock label="Company" child={lc.navMenuList} /> */}
             {/*</div>*/}
 
             {/* Fourth row ---------------- Policies */}
@@ -183,7 +186,8 @@ export default function PublicFooter() {
           </div>
 
           {/* Copyright Footer */}
-          <div className="flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
+          <div
+            className="flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
             <CustomTypography className="flex items-center mb-4 text-center font-medium md:mb-0 text-white">
               &copy; {currentYear} Himalayan Single Track. All Rights Reserved.
             </CustomTypography>

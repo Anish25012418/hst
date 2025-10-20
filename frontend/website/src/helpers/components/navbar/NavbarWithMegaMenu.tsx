@@ -152,7 +152,9 @@ export default function NavbarWithMegaMenu(props: any) {
               <div className="flex justify-start items-center gap-4 px-4 py-2">
                 <div className="h-[50px] w-[50px] lg:h-[52] lg:w-[52]">
                   <Image
-                    src={HST_LOGO_png}
+                    src={"/image/hst_logo.png"}
+                    width={10}
+                    height={10}
                     alt="HST Logo"
                     className="w-full h-full object-cover"
                   />
