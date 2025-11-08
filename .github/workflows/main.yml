@@ -40,7 +40,13 @@ jobs:
       - name: Start backend with PM2
         working-directory: ./backend/dashboard
         run: |
-          /home/ubuntu/.nvm/versions/node/v22.18.0/bin/pm2 delete backend || true
-          /home/ubuntu/.nvm/versions/node/v22.18.0/bin/pm2 start npm --name backend -- start --update-env
-          /home/ubuntu/.nvm/versions/node/v22.18.0/bin/pm2 save
+          export NVM_DIR="$HOME/.nvm"
+          source "$NVM_DIR/nvm.sh"
+          export PATH="$HOME/.nvm/versions/node/v22.18.0/bin:$PATH"
+      
+          # restart or start PM2 process
+          pm2 delete backend || true
+          pm2 start npm --name backend -- start --update-env
+          pm2 save
+
 
