@@ -40,5 +40,4 @@ jobs:
       - name: Start backend with PM2
         working-directory: ./backend/dashboard
         run: |
-          /home/ubuntu/.nvm/versions/node/v22.18.0/bin/pm2 restart backend --update-env || /home/ubuntu/.nvm/versions/node/v22.18.0/bin/pm2 start npm --name backend -- start --update-env
-
+          pm2 restart backend --update-env || pm2 start npm --name backend -- run start --update-env
